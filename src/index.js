@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom'
 
 import { Router } from './web/Router'
 
-ReactDOM.render(<Router />, document.querySelector('#root'))
+ReactDOM.hydrate(<Router />, document.querySelector('#root'))

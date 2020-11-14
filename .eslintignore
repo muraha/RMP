@@ -8,3 +8,4 @@ dist
 scripts
 *.config.js
 MoviesAPI.ReactJS
+server-build

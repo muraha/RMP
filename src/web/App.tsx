@@ -2,10 +2,12 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware, CombinedState, Store } from 'redux'
 import {
-  BrowserRouter,
+  Router as BrowserRouter,
   Route,
   Switch
 } from 'react-router-dom'
+import { createMemoryHistory } from 'history'
+
 import createSagaMiddleware from 'redux-saga'
 
 import { rootReducer } from '../core/reducer'
@@ -23,6 +25,7 @@ import Search from './components/Search/Search'
 import '../index.css'
 
 const sagaMiddleware = createSagaMiddleware()
+const history = createMemoryHistory()
 
 const store: Store<CombinedState<IAppState>> =
   createStore(rootReducer, applyMiddleware(logger, crashReporter, sagaMiddleware))
@@ -33,7 +36,7 @@ for (const saga in coreSagas) {
 
 export const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter history={history}>
       <Provider store={store}>
         <ErrorBoundary>
           <ModalsSwitcher />
