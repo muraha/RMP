@@ -111,7 +111,7 @@ const MovieCardComponent: React.FC<OwnProps> = ({
       <Link
         to={`/movie/${id}`}
         className={styles.poster}
-        onClick={(e) => { handleMovieCardClick(e) }}
+        onClick={e => { handleMovieCardClick(e) }}
       >
         <img
           data-movieid={id}

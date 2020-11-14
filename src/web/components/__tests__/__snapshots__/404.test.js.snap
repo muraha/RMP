@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`404 Page snapshot 1`] = `
+<Fragment>
+  <div
+    id="pg404_background-404"
+  >
+    <p
+      className="netflix"
+    >
+      <Text
+        classes={null}
+        red={true}
+        size="m"
+        transform="lowercase"
+        weight="800"
+      >
+        netflix
+      </Text>
+      <Text
+        classes={null}
+        red={true}
+        size="m"
+        transform="lowercase"
+        weight="400"
+      >
+        roulette
+      </Text>
+    </p>
+    <div
+      id="pg404_stars1"
+    />
+    <div
+      id="pg404_stars2"
+    />
+    <div
+      id="pg404_stars3"
+    />
+    <div
+      id="pg404_title"
+    >
+      <span
+        className="pg404_text-small"
+      >
+        THERE IS NO EMOTION, THERE IS
+      </span>
+      <br />
+      <span
+        className="pg404_text-big"
+      >
+        PEACE
+      </span>
+      <br />
+      <span
+        className="pg404_text-small"
+      >
+        THERE IS NO IGNORANCE, THERE IS
+      </span>
+      <br />
+      <span
+        className="pg404_text-big"
+      >
+        KNOWLEDGE
+      </span>
+      <br />
+      <span
+        className="pg404_text-small"
+      >
+        THERE IS NO PASSION, THERE IS
+      </span>
+      <br />
+      <span
+        className="pg404_text-big"
+      >
+        SERENITY
+      </span>
+      <br />
+      <span
+        className="pg404_text-small"
+      >
+        THERE IS NO CHAOS, THERE IS
+      </span>
+      <br />
+      <span
+        className="pg404_text-big"
+      >
+        HARMONY
+      </span>
+      <br />
+      <span
+        className="pg404_text-small"
+      >
+        THERE IS NO INFORMATION, THERE IS
+      </span>
+      <br />
+      <span
+        className="pg404_text-404"
+      >
+        404
+      </span>
+      <br />
+      <br />
+      <Link
+        to="/"
+      >
+        <Button
+          classes="button"
+          gray={true}
+        >
+          GO BACK TO HOME
+        </Button>
+      </Link>
+    </div>
+    <p
+      className="netflix_footer"
+    >
+      <Text
+        classes={null}
+        red={true}
+        size="m"
+        transform="lowercase"
+        weight="800"
+      >
+        netflix
+      </Text>
+      <Text
+        classes={null}
+        red={true}
+        size="m"
+        transform="lowercase"
+        weight="400"
+      >
+        roulette
+      </Text>
+    </p>
+  </div>
+</Fragment>
+`;

@@ -2,6 +2,7 @@
 
 node_modules
 dist
+coverage
 
 *.d.css
 *.d.ts

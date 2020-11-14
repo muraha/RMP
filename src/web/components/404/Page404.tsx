@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import Button from '../utils/button/Button'
 import Text, { TextSize, TextTransform, TextWeight } from '../utils/text/Text'
 
-import * as styles from './styles.css'
+import styles from './styles.css'
 
 const Page404: React.FC = () => {
   return (

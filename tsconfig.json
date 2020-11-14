@@ -14,7 +14,8 @@
     "declaration": false,
     "declarationMap": false,
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowJs": true,
   },
   "exclude": ["node_modules"]
 }

@@ -21,3 +21,9 @@
   * cd *_MoviesAPI.ReactJS_*
   * run _npm i_
   * run _npm start_
+
+### TESTING
+
+  * run _yarn test_
+  or
+  * run _yarn test:coverage_ to generate coverage report
