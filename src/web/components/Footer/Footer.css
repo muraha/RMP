@@ -1,0 +1,9 @@
+@import './../../styles/index.css';
+
+.Footer {
+  height: var(--height-footer);
+  background-color: var(--color-gray-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

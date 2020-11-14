@@ -1,0 +1,20 @@
+@import '../../../styles/index.css';
+
+.MoviesCounter {
+  padding: var(--page-pad-three-quarter) var(--page-pad-third);
+}
+
+.FilmsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 calc(var(--page-pad-half) * -1);
+  justify-content: flex-start;
+}
+
+.NoMovies {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

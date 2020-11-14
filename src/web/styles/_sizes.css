@@ -1,0 +1,76 @@
+:root {
+  /* page */
+  --page-width: 120rem;
+  --height-header: 40rem;
+  --height-footer: 5rem;
+  /* films */
+  --film-height: 41rem;
+  /* --film-width: 28rem; */
+  /* modal */
+  --modal-width: 71rem;
+
+  /* elements */
+  --width-xs: 12rem; /* movie actions */
+  --width-m: 17.6rem; /* button base*/
+  --width-l: 23.1rem;
+
+  --height-xs: 1.2rem; /* divider */
+  --height-s: 4.6rem;
+  --height-m: 5.7rem; /* main */
+
+  /* border */
+  --border-radius-default: 0.6rem;
+  --border-size-medium: calc( var(--border-radius-default) / 3);
+
+  /* grid */
+  --grid-pad: 3rem; /* main side pad */
+  --grid-search-gaps: 1.5rem 1rem;
+  --grid-film-gaps: 1rem 0;
+  --grid-text-line: var(--height-s);
+  --grid-text-line-half: calc(var(--grid-text-line) / 2);
+
+  /* pads */
+  --page-pad-plus-half: calc( var(--page-pad) + var(--page-pad-half)); /* 4.5rem*/
+  --page-pad: 3rem;
+  --page-pad-three-quarter: calc(var(--page-pad) / 4 * 3); /* 2.25rem*/
+  --page-pad-half: calc(var(--page-pad) / 2); /* 1.5rem*/
+  --page-pad-third: calc(var(--page-pad) / 3); /* 1rem*/
+  --page-pad-quarter: calc(var(--page-pad) / 4); /* 0.75rem*/
+
+  --line-height-m: 2rem;
+  --line-height-l: 3rem;
+
+  --text-xs: 1.2rem;
+  --text-s: 1.6rem;
+  --text-m: 2rem;
+  --text-l: 2.4rem;
+  --text-xl: 3.8rem;
+  --text-xxl: 5.8rem; /* modal close Btn */
+
+  /**       COMPONENTS      **/
+  --elem-margin: 0.3rem;
+  /* Button */
+  --button-base-font-weight: var(--font-weight-regular);
+  --button-base-font-size: var(--text-m);
+  --button-base-line-height: var(--line-height-m);
+
+  --button-big-width: var(--width-l); /* SEARCH */
+  --button-base-width: var(--width-m);
+  --button-base-height: var(--height-m);
+  --button-small-height: var(--height-s);
+
+  --button-border-radius: var(--border-radius-default);
+
+  --button-small-width: var(--width-s);
+  --button-small-height: var(--height-s);
+
+  --button-border-radius: var(--border-radius-default);
+
+/* Text component*/
+  --text-base-line-height: var(--line-height-m);
+  --text-base-font-weight: var(--font-weight-regular);
+
+  /* Input */
+  --input-base-height: var(--height-m);
+  --input-base-font-size: var(--text-m);
+}

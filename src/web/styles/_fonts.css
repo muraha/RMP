@@ -1,0 +1,10 @@
+:root {
+  --font-resize: 62.5%;
+  --font-family: 'Montserrat', sans-serif,  monospace;
+
+  --font-weight-extra-bold: 800;
+  --font-weight-bold: 600;
+  --font-weight-regular: 400;
+  --font-weight-light: 300;
+  --font-weight-extra-light:200;
+};

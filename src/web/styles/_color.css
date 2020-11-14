@@ -1,0 +1,11 @@
+:root {
+  /* main colors */
+  --color-red: #f65261;
+  --color-gray-light: #555555;
+  --color-gray-dark: #424242;
+  --color-black: #232323;
+  --color-white: #fff;
+
+  --color-red-text: #f65260bb;
+  --color-gray-dark-input: #2c2c2c;
+}

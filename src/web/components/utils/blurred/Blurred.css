@@ -1,0 +1,6 @@
+.isBlurred {
+  filter: blur(1rem);
+  position: fixed;
+  overflow-y: hidden;
+  width: 100vw;
+}

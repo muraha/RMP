@@ -1,0 +1,130 @@
+@import "../../styles/_sizes.css";
+
+.DBackground {
+  height: var(--height-header);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  filter: blur(0.3rem);
+  background-color: rgba(0, 0, 0, 1);
+  z-index: -1;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    background: url("../../../assets/posters.jpeg");
+    opacity: 0.07;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.DGridContainer {
+  padding: var(--page-pad-third) var(--page-pad) var(--page-pad);
+  display: grid;
+  grid-template-columns: 20% var(--page-pad-half) 7rem auto auto var(--grid-pad);
+  grid-template-rows: 5rem 6rem 3rem 3.5rem 12.5rem;
+  grid-template-areas:
+    " netflix . . . . searchBtn "
+    " poster . title title title . "
+    " poster . tag tag tag . "
+    " poster . year run . . "
+    " poster . text text text . ";
+  gap: var(--grid-search-gaps);
+  justify-items: stretch;
+  align-items: start;
+  min-width: 65rem;
+}
+
+.DNetflix {
+  grid-area: netflix;
+  justify-self: start;
+  align-self: top;
+  padding-top: var(--page-pad-three-quarter);
+}
+
+.DSearchBtn {
+  grid-area: searchBtn;
+  justify-self: end;
+  align-self: center;
+  & button {
+    height: var(--button-small-height);
+    width: 5rem;
+    font-size: var(--text-m);
+  }
+  & a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: initial;
+    outline: none;
+  }
+}
+
+.DPoster {
+  grid-area: poster;
+
+  & img {
+    max-width: 20rem;
+    max-height: 30rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.DTitle {
+  grid-area: title;
+  display: flex;
+  justify-self: start;
+  align-self: end;
+  align-items: center;
+}
+
+.DTitleText {
+  line-height: 4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.DRating {
+  color: greenyellow;
+  opacity: 0.8;
+  border: var(--border-size-medium) solid white;
+  border-radius: 100%;
+  padding: var(--page-pad-three-quarter)
+    calc(var(--page-pad-three-quarter) - 0.5rem);
+  margin: 0 15px;
+  & div {
+    width: 3.6rem;
+    text-align: center;
+  }
+}
+
+.DTagline {
+  grid-area: tag;
+  justify-self: start;
+  opacity: 0.8;
+}
+.DYear {
+  grid-area: year;
+  justify-self: start;
+}
+.DRuntime {
+  grid-area: run;
+  justify-self: start;
+}
+.DDetails {
+  grid-area: text;
+  justify-self: start;
+  opacity: 0.8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  height: 12rem;
+}

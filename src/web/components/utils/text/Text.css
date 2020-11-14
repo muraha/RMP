@@ -1,0 +1,64 @@
+@import './../../../styles/index.css';
+
+.Txt {
+  /* display: block; */
+  font-weight: var(--text-base-font-weight);
+  line-height: var(--text-base-line-height);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.Txt--isRed {
+  color: var(--color-red-text);
+}
+.Txt--isGray {
+  color: var(--color-gray-light);
+}
+.Txt--isBlack {
+  color: var(--color-black);
+}
+
+.Txt--size-xs {
+  font-size: var(--text-xs);
+}
+.Txt--size-s {
+  font-size: var(--text-s);
+}
+.Txt--size-m {
+  font-size: var(--text-m);
+}
+.Txt--size-l {
+  font-size: var(--text-l);
+}
+.Txt--size-xl {
+  font-size: var(--text-xl);
+}
+
+.Txt--weight-400 {
+  font-weight: var(--font-weight-regular);
+}
+.Txt--weight-200 {
+  font-weight: var(--font-weight-light);
+}
+.Txt--weight-300 {
+  font-weight: var(--font-weight-light);
+}
+.Txt--weight-600 {
+  font-weight: var(--font-weight-bold);
+}
+.Txt--weight-800 {
+  font-weight: var(--font-weight-extra-bold);
+}
+
+.Txt--transform-uppercase {
+  text-transform: uppercase;
+}
+.Txt--transform-capitalize {
+  text-transform: capitalize;
+}
+.Txt--transform-lowercase {
+  text-transform: lowercase;
+}
+.Txt--transform-none {
+  text-transform: none;
+}

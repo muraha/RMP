@@ -1,0 +1,13 @@
+@import '../../styles/_sizes.css';
+@import '../../styles/_color.css';
+
+.divider {
+background-color: var(--color-gray-light);
+width: 100%;
+height: var(--height-xs);
+}
+
+.SearchResultContainer {
+  background-color: var(--color-black);
+  padding: 0 var(--page-pad);
+}

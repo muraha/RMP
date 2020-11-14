@@ -1,0 +1,106 @@
+.ModalInput {
+  width: 100%;
+  height: var(--input-base-height);
+  margin: var(--elem-margin) 0;
+  border: none;
+  border-radius: var(--border-radius-default);
+  font-size: var(--input-base-font-size);
+  color: var(--color-white);
+  background: var(--color-gray-dark-input);
+  padding: var(--page-pad-half);
+
+  &::-webkit-datetime-edit-text {
+    color: var(--color-red);
+    padding: 0 0.3em;
+  }
+
+  &::-webkit-inner-spin-button {
+    display: none;
+  }
+}
+
+.ModalInput--selectWrapper {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: var(--page-pad-three-quarter);
+    margin-top: var(--page-pad);
+    border-left: var(--border-radius-default) solid transparent;
+    border-right: var(--border-radius-default) solid transparent;
+    border-top: var(--border-radius-default) solid var(--color-red);
+  }
+}
+
+.ModalInput--select {
+  width: 100%;
+  /* height: var(--input-base-height); */
+  height: auto;
+  margin: var(--elem-margin) 0;
+  border: none;
+  border-radius: var(--border-radius-default);
+  font-size: var(--input-base-font-size);
+  color: var(--color-white);
+  background: var(--color-gray-dark-input);
+  /* padding: var(--page-pad-half); */
+  outline: none;
+  appearance: none;
+  &::-ms-expand {
+    display: none;
+  }
+  & option {
+    padding: var(--page-pad-half);
+    &:not(:first-child) {
+      cursor: pointer;
+    }
+  }
+  /* custom scrollbar */
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--color-gray-dark-input);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-red-text);
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--color-red);
+  }
+}
+
+.ModalActoinBtns {
+  position: relative;
+  direction: rtl;
+  margin-top: var(--page-pad-plus-half);
+  margin-right: calc(var(--elem-margin) * -0.5);
+}
+
+.ModalSubtitle {
+  display: block;
+  &:not(:first-child) {
+    padding-top: var(--page-pad-three-quarter);
+  }
+}
+
+/** DELETE MODAL **/
+.DeleteQuestion {
+  padding-bottom: var(--page-pad);
+}
+
+.DeleteConfirmBtn {
+  position: relative;
+  direction: rtl;
+}
+
+/** Errors **/
+.InputErrors {
+  position: relative;
+  height: 0;
+
+  & span {
+    position: absolute;
+    top: -0.5rem;
+  }
+}

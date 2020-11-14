@@ -1,0 +1,85 @@
+@import '../../styles/_sizes.css';
+
+.SearchBackground {
+  height: var(--height-header);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  filter: blur(0.3rem);
+  background-color: rgba(0, 0, 0, 1);
+  z-index: -1;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    background: url('../../../assets/posters.jpeg');
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.SearchGridContainer {
+  padding: var(--page-pad-third) var(--page-pad);
+  display: grid;
+  grid-template-columns: var(--grid-pad) auto auto calc(var(--width-l) + 1rem) var(--grid-pad);
+  grid-template-rows: 10rem 6rem 7rem 10.5rem;
+  grid-template-areas:
+  " netflix . . . addFilm "
+  " . title title title ."
+  " . searchForm searchForm searchForm . ";
+  gap: var(--grid-search-gaps);
+  justify-items: stretch;
+  align-items: start;
+}
+
+.netflix {
+  grid-area: netflix;
+  justify-self: start;
+  align-self: top;
+  padding-top: var(--page-pad-three-quarter);
+}
+
+.addBtn {
+  grid-area: addFilm;
+  justify-self: end;
+  align-self: center;
+  height: var(--button-small-height);
+  font-size: var(--text-m);
+}
+
+.title {
+  grid-area: title;
+  justify-self: start;
+  line-height: inherit;
+}
+
+.searchForm {
+  grid-area: searchForm;
+  justify-self: start;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.searchInput {
+  width: 100%;
+  height: var(--input-base-height);
+  margin: var(--elem-margin);
+  border: none;
+  border-radius: var(--border-radius-default);
+  font-size: var(--input-base-font-size);
+  color: var(--color-white);
+  background: var(--color-black);
+  padding: var(--page-pad-half);
+  box-shadow: 0 0 20px 5px black;
+  opacity: 0.7;
+}
+
+.searchBtn {
+  width: var(--button-big-width);
+}

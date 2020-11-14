@@ -1,0 +1,93 @@
+@import './../../../styles/index.css';
+
+.Btn {
+  /* display: block; */
+  font-family: var(--font-family);
+  font-size: var(--button-base-font-size);
+  font-weight: var(--button-base-font-weight);
+  line-height: var(--button-base-line-height);
+  text-decoration: none;
+  position: relative;
+  width: var(--button-base-width);
+  height: var(--button-base-height);
+  cursor: pointer;
+  border-radius: var(--button-border-radius);
+  border: var(--border-size) solid transparent;
+
+  margin: var(--elem-margin);
+
+  transition:
+    background 200ms ease-in-out,
+    color 200ms ease-in-out,
+    font-weight 100ms ease-in-out,
+    opacity 200ms ease-in-out,
+    border 200ms ease-in-out;
+  text-transform: var(--button-text-transform);
+}
+
+.Btn--isRed{
+  background: var(--color-red);
+  color: var(--color-white);
+  border: var(--border-size-medium) solid var(--color-red);
+  &:hover {
+    background: transparent;
+    color: var(--color-red);
+  }
+}
+.Btn--isGray{
+  background: var(--color-gray-light);
+  color: var(--color-red);
+  &:hover {
+    background: var(--color-gray-light);
+    color: var(--color-red);
+    opacity: 1;
+    font-weight: var(--button-base-font-weight);
+  }
+}
+.Btn--isBlack{
+  background: var(--color-black);
+  color: var(--color-red);
+  border: var(--border-size-medium) dotted var(--color-red);
+  &:hover {
+    background: var(--color-red);
+    color: var(--color-black);
+    border: var(--border-size-medium) solid var(--color-red);
+  }
+}
+
+.Btn--isOutlined {
+  border: var(--border-size-medium) solid;
+}
+.Btn--isFiltered {
+  opacity: 0.7;
+}
+.Btn--isTransparent {
+  background: transparent;
+}
+.Btn--isNavigation{
+  color: var(--color-white);
+  border-radius: 0;
+  margin: 0;
+  width: fit-content;
+  padding: 0 var(--page-pad-third);
+  &.selected {
+    border-bottom: var(--border-size-medium) solid var(--color-red);
+  }
+  &:hover {
+    background-color: var(--color-red);
+    & span {
+      color: var(--color-black);
+    }
+  }
+}
+
+.Btn--isBold,
+.button.Btn--isBold,
+button.Btn--isBold {
+  font-weight: var(--font-weight-bold);
+}
+.Btn--isThin,
+.button.Btn--isThin,
+button.Btn--isThin {
+  font-weight: var(--font-weight-light);
+}
